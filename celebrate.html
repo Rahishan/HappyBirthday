@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>🎉 Happy Birthday 🎉</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Confetti Library -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+<!-- Fireworks Library -->
+<script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.10.7/dist/index.umd.js"></script>
+
+</head>
+
+<body class="celebration-page">
+
+<div id="fireworks"></div>
+
+<div class="hearts">
+
+<span>❤️</span>
+<span>💖</span>
+<span>💕</span>
+<span>💗</span>
+<span>💝</span>
+<span>💞</span>
+
+</div>
+
+<div class="container">
+
+<div class="glass-card celebration-card">
+
+<h3 class="small-title">
+🎉 Get Ready 🎉
+</h3>
+
+<h1 id="countdown">
+5
+</h1>
+
+<p id="countText">
+
+Celebration begins in...
+
+</p>
+
+<div id="finalContent" style="display:none;">
+
+<h1 class="birthday-heading">
+
+🎂 HAPPY BIRTHDAY 🎂
+
+</h1>
+
+<h2>
+
+❤️ My Love ❤️
+
+</h2>
+
+<img
+class="birthday-image"
+src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=900&q=80">
+
+<br><br>
+
+<p class="message">
+
+May Allah bless you with
+
+endless happiness ❤️
+
+good health 🌸
+
+success 🌟
+
+peace ☁️
+
+and every dream your heart holds.
+
+<br><br>
+
+Thank you for being
+
+the best husband ❤️
+
+the best father ❤️
+
+and the biggest blessing in our lives.
+
+<br><br>
+
+May your smile always shine brighter than today.
+
+<br><br>
+
+We Love You Forever ❤️♾️
+
+</p>
+
+<h2>
+
+👨‍👩‍👦‍👦
+
+With Lots Of Love
+
+<br><br>
+
+❤️ Your Loving Wife
+
+❤️ Arham
+
+❤️ Reyaan
+
+</h2>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Optional Background Music -->
+<!--
+<audio autoplay loop>
+
+<source src="birthday.mp3" type="audio/mp3">
+
+</audio>
+-->
+
+<script>
+
+let count = 5;
+
+const countdown = document.getElementById("countdown");
+
+const finalContent = document.getElementById("finalContent");
+
+const timer = setInterval(function(){
+
+count--;
+
+if(count>=0){
+
+countdown.innerHTML=count;
+
+}
+
+if(count<0){
+
+clearInterval(timer);
+
+countdown.style.display="none";
+
+document.getElementById("countText").style.display="none";
+
+finalContent.style.display="block";
+
+/* Confetti */
+
+confetti({
+
+particleCount:300,
+
+spread:360,
+
+origin:{y:0.5}
+
+});
+
+/* Fireworks */
+
+const container=document.getElementById("fireworks");
+
+const fireworks=new Fireworks.default(container,{
+
+speed:4,
+
+acceleration:1.05,
+
+friction:0.95,
+
+gravity:1.5,
+
+particles:150,
+
+trace:4,
+
+explosion:8,
+
+autoresize:true
+
+});
+
+fireworks.start();
+
+}
+
+},1000);
+
+</script>
+
+</body>
+
+</html>

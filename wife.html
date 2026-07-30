@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Birthday Surprise From Your Better Half ❤️</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Floating Hearts -->
+
+<div class="hearts">
+
+    <span>❤️</span>
+    <span>💖</span>
+    <span>💕</span>
+    <span>💗</span>
+    <span>💝</span>
+    <span>💞</span>
+
+</div>
+
+<div class="container">
+
+    <div class="glass-card">
+
+        <h3 class="small-title">
+            💖 Surprise from Wife 💖
+        </h3>
+
+        <h1 class="main-title">
+            Happy Birthday My Better Half ❤️
+        </h1>
+
+        <img src="us.jpeg"
+             class="birthday-image">
+
+        <br><br>
+
+        <p class="message">
+
+            I have one last surprise for you...
+
+            <br><br>
+
+            Scratch the card below to reveal my heartfelt birthday message.
+
+        </p>
+
+        <!-- Scratch Card -->
+
+        <div class="scratch-card">
+
+            <div id="scratchCover">
+
+                💌 Scratch Here 💌
+
+            </div>
+
+            <div id="scratchMessage">
+
+                <h2>
+                    ❤️ Happy Birthday My Better Half ❤️
+                </h2>
+
+                <p>
+
+                    Happy Birthday to the most amazing husband.
+
+                    <br><br>
+
+                    Thank you for being so supportive...
+
+                    <br><br>
+
+                    Thank you for being so loving...
+
+                    <br><br>
+
+                    Thank you for being so caring...
+
+                    <br><br>
+
+                    Thank you for standing beside me like a strong pillar through every phase of life.
+
+                    <br><br>
+
+                    You have always given strength to our family and filled our lives with happiness.
+
+                    <br><br>
+
+                    May Allah bless you with endless happiness, good health, success, peace, and a long beautiful life.
+
+                    <br><br>
+
+                    May Allah always keep you strong because we are who we are because of you.
+
+                    <br><br>
+
+                    Without you our world feels incomplete.
+
+                    <br><br>
+
+                    I pray that Allah fulfills every dream in your heart and always protects you from every difficulty.
+
+                    <br><br>
+
+                    Thank you for being my partner, my best friend, my biggest support, and the love of my life.
+
+                    <br><br>
+
+                    I love you today...
+
+                    Tomorrow...
+
+                    Forever...
+
+                    And Infinity Times ❤️♾️
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <br><br>
+
+        <h2>
+            🎉 One Final Surprise Awaits...
+        </h2>
+
+        <p>
+
+            Let's celebrate your birthday together with lots of love, happiness and joy.
+
+        </p>
+
+        <button class="yes-btn"
+                onclick="location.href='celebrate.html'">
+
+            🎂 Yes Let's Celebrate
+
+        </button>
+
+    </div>
+
+</div>
+
+<script>
+
+const cover = document.getElementById("scratchCover");
+
+let scratches = 0;
+
+function scratch() {
+
+    scratches++;
+
+    cover.style.opacity -= 0.02;
+
+    if (scratches > 40) {
+
+        cover.style.display = "none";
+
+    }
+
+}
+
+cover.addEventListener("mousemove", scratch);
+cover.addEventListener("touchmove", scratch);
+
+</script>
+
+</body>
+
+</html>

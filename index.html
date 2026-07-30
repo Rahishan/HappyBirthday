@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday ❤️</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Floating Hearts -->
+    <div class="hearts">
+        <span>❤️</span>
+        <span>💖</span>
+        <span>💕</span>
+        <span>💗</span>
+        <span>💝</span>
+        <span>💞</span>
+        <span>❤️</span>
+        <span>💖</span>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <div class="glass-card">
+
+            <h3 class="small-title">
+                ⏰ Tick... Tock...
+            </h3>
+
+            <div class="clock">
+                🕒
+            </div>
+
+            <h1 class="main-title">
+                The Time Has Started Ticking...
+            </h1>
+
+            <p class="message">
+
+                Today is not just another day...
+
+                <br><br>
+
+                It's the birthday of someone who means the world to us ❤️
+
+                <br><br>
+
+                We have planned something very special only for you...
+
+                <br><br>
+
+                We would like to say something on your birthday...
+
+            </p>
+
+            <h2 class="question">
+                🎁 Are You Excited?
+            </h2>
+
+            <div class="buttons">
+
+                <button
+                    class="yes-btn"
+                    onclick="goNext()">
+
+                    Yes 😍
+
+                </button>
+
+                <button
+                    id="noBtn"
+                    class="no-btn">
+
+                    Not Yet 😅
+
+                </button>
+
+            </div>
+
+            <p class="hint">
+                (Try clicking "Not Yet" 😄)
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- Background Music (Optional) -->
+    <!--
+    <audio autoplay loop>
+        <source src="music.mp3" type="audio/mp3">
+    </audio>
+    -->
+
+    <script>
+
+        const noBtn = document.getElementById("noBtn");
+
+        function random(min, max) {
+            return Math.random() * (max - min) + min;
+        }
+
+        function moveButton() {
+
+            noBtn.style.position = "absolute";
+
+            noBtn.style.left = random(5, 80) + "%";
+
+            noBtn.style.top = random(10, 80) + "%";
+
+        }
+
+        noBtn.addEventListener("mouseover", moveButton);
+        noBtn.addEventListener("click", moveButton);
+
+        function goNext() {
+
+            window.location.href = "kids.html";
+
+        }
+
+    </script>
+
+</body>
+</html>

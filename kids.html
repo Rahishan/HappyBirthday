@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Birthday Surprise From Arham & Reyaan ❤️</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="hearts">
+
+    <span>❤️</span>
+    <span>💖</span>
+    <span>💕</span>
+    <span>💝</span>
+    <span>💗</span>
+    <span>💞</span>
+
+</div>
+
+
+<div class="container">
+
+<div class="glass-card">
+
+<h3 class="small-title">
+🎉 Surprise from Chintu & Pintu 🎉
+</h3>
+
+<h1 class="main-title">
+
+Happy Birthday Papa ❤️
+
+</h1>
+
+<h2>
+
+From
+
+<br>
+
+👦 Arham
+
+❤️
+
+👶 Reyaan
+
+</h2>
+
+<br>
+
+<img
+src="kid.jpeg"
+class="birthday-image">
+
+<br><br>
+
+<p class="message">
+
+We have a special birthday message for you Papa ❤️
+
+<br><br>
+
+But...
+
+You need to scratch the card below to read it 😍
+
+</p>
+
+<div class="scratch-card">
+
+<div id="scratchCover">
+
+✨ Scratch Here ✨
+
+</div>
+
+<div id="scratchMessage">
+
+<h2>
+
+🎂 Happy Birthday Papa ❤️
+
+</h2>
+
+<p>
+
+You are the world's best father.
+
+<br><br>
+
+Thank you for fulfilling each and every wish of ours.
+
+<br><br>
+
+Thank you for taking care of us like little princes 👑
+
+<br><br>
+
+You are just like a coconut 🥥
+
+<br><br>
+
+Hard from outside...
+
+<br>
+
+Soft, pure and full of love from inside ❤️
+
+<br><br>
+
+You always stand by us,
+
+protect us,
+
+care for us,
+
+and make us smile every single day.
+
+<br><br>
+
+Please keep loving us like this forever.
+
+<br><br>
+
+We promise to love you
+
+∞ Infinity Times ❤️
+
+</p>
+
+</div>
+
+</div>
+
+<br><br>
+
+<h2>
+
+🤫 Wait...
+
+</h2>
+
+<p>
+
+There is still one more hidden surprise waiting for you ❤️
+
+</p>
+
+<button
+class="yes-btn"
+onclick="location.href='wife.html'">
+
+Yes ❤️ Show Me
+
+</button>
+
+</div>
+
+</div>
+
+
+<script>
+
+const cover = document.getElementById("scratchCover");
+
+let scratches = 0;
+
+cover.addEventListener("mousemove", scratch);
+cover.addEventListener("touchmove", scratch);
+
+function scratch(){
+
+scratches++;
+
+cover.style.opacity -= 0.02;
+
+if(scratches>40){
+
+cover.style.display="none";
+
+}
+
+}
+
+</script>
+
+</body>
+
+</html>
